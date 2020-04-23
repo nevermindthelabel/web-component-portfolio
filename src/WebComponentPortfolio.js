@@ -1,5 +1,4 @@
 import { LitElement, html, css } from 'lit-element';
-import { openWcLogo } from './open-wc-logo.js';
 
 export class WebComponentPortfolio extends LitElement {
   static get properties() {
@@ -19,15 +18,20 @@ export class WebComponentPortfolio extends LitElement {
         justify-content: flex-start;
         font-size: calc(10px + 2vmin);
         color: #1a2b42;
-        max-width: 960px;
+        min-width: 100vw;
         margin: 0 auto;
         text-align: center;
+        background-image: url('../assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
       }
     `;
   }
 
   render() {
     return html`
+
     `;
   }
 }
