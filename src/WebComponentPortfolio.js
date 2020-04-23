@@ -17,7 +17,6 @@ export class WebComponentPortfolio extends LitElement {
         align-items: center;
         justify-content: flex-start;
         font-size: calc(10px + 2vmin);
-        color: #1a2b42;
         min-width: 100vw;
         margin: 0 auto;
         text-align: center;
@@ -26,12 +25,17 @@ export class WebComponentPortfolio extends LitElement {
         background-attachment: fixed;
         background-position: center;
       }
+      .container {
+        background-color: #FFFFFF;
+      }
     `;
   }
 
   render() {
     return html`
-
+      <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam maxime, sequi quibusdam officiis soluta corrupti maiores deleniti magnam fugit ipsum itaque obcaecati iure architecto est! Repellat assumenda delectus tempora?
+      </div>
     `;
   }
 }
