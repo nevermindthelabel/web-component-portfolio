@@ -18,8 +18,6 @@ export class WebComponentPortfolio extends LitElement {
         justify-content: flex-start;
         font-size: calc(10px + 2vmin);
         min-width: 100vw;
-        margin: 0 auto;
-        text-align: center;
         background-image: url('../assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -27,6 +25,10 @@ export class WebComponentPortfolio extends LitElement {
       }
       .container {
         background-color: #FFFFFF;
+        opacity: .8;
+        max-width: 960px;
+        padding: 1em;
+        margin: 2em auto;
       }
     `;
   }
