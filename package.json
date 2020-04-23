@@ -50,7 +50,8 @@
   "author": "web-component-portfolio",
   "license": "MIT",
   "dependencies": {
+    "lit-element": "^2.0.1",
     "lit-html": "^1.0.0",
-    "lit-element": "^2.0.1"
+    "pwa-helpers": "^0.9.1"
   }
 }
