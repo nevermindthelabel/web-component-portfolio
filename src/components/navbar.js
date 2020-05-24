@@ -8,6 +8,8 @@ export class Navbar extends LitElement {
         overflow: hidden;
         background-color: #f1f1f1;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 90px 10px;
         transition: .4s;
         position: fixed;
@@ -15,9 +17,10 @@ export class Navbar extends LitElement {
         top: 0;
       }
       .navbar a {
-        /* float: left; */
         align-items: flex-start;
+        /* justify-content: space-evenly; */
         color: black;
+        justify-content: baseline;
         text-align: center;
         padding: 12px;
         text-decoration: none;
@@ -25,8 +28,13 @@ export class Navbar extends LitElement {
         line-height: 25px;
         border-radius: 4px;
       }
+      .brand {
+        align-items: baseline;
+        justify-content: baseline;
+      }
       .links a {
-        float: right;
+        justify-content: flex-end;
+        align-items: flex-end;
       }
     `;
   }
