@@ -13,6 +13,16 @@ export class Navbar extends LitElement {
         width: 100%;
         top: 0;
       }
+      .navbar a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
     `;
   }
 
