@@ -7,6 +7,7 @@ export class Navbar extends LitElement {
       .navbar {
         overflow: hidden;
         background-color: #f1f1f1;
+        display: flex;
         padding: 90px 10px;
         transition: .4s;
         position: fixed;
@@ -14,7 +15,8 @@ export class Navbar extends LitElement {
         top: 0;
       }
       .navbar a {
-        float: left;
+        /* float: left; */
+        align-items: flex-start;
         color: black;
         text-align: center;
         padding: 12px;
