@@ -23,6 +23,9 @@ export class Navbar extends LitElement {
         line-height: 25px;
         border-radius: 4px;
       }
+      .links a {
+        float: right;
+      }
     `;
   }
 
