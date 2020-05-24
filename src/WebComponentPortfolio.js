@@ -1,4 +1,5 @@
 import { LitElement, html, css } from 'lit-element';
+import './components/navbar.js';
 
 export class WebComponentPortfolio extends LitElement {
   static get properties() {
@@ -35,6 +36,7 @@ export class WebComponentPortfolio extends LitElement {
 
   render() {
     return html`
+    <portfolio-navbar></portfolio-navbar>
       <div class="container">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam maxime, sequi quibusdam officiis soluta corrupti maiores deleniti magnam fugit ipsum itaque obcaecati iure architecto est! Repellat assumenda delectus tempora?
       </div>
