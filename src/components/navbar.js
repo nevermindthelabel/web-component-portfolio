@@ -30,6 +30,12 @@ export class Navbar extends LitElement {
     return html`
     <div class="navbar">
       <a href="#" class="brand">Matt Kilcup</a>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Portfolio</a>
+      </div>
     </div>
     `
   }
