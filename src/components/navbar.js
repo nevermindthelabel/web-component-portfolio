@@ -10,7 +10,7 @@ export class Navbar extends LitElement {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 90px 10px;
+        padding: 90px 20px;
         transition: .4s;
         position: fixed;
         width: 100%;
@@ -35,6 +35,10 @@ export class Navbar extends LitElement {
       .links a {
         justify-content: flex-end;
         align-items: flex-end;
+        /* margin-right: 3em; */
+      }
+      .links a:last-child {
+        margin-right: 3em;
       }
     `;
   }
