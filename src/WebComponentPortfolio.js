@@ -6,7 +6,7 @@ export class WebComponentPortfolio extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      page: { type: String },
+      page: { type: String }
     };
   }
 
@@ -15,8 +15,9 @@ export class WebComponentPortfolio extends LitElement {
       :host {
         min-height: 100vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         font-size: calc(10px + 2vmin);
         width: 100vw;
         background-image: url('../assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg');
@@ -42,5 +43,15 @@ export class WebComponentPortfolio extends LitElement {
       </div>
       <portfolio-footer></portfolio-footer>
     `;
+  }
+
+  scrollCheck() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementsByClassName('navbar').style.padding = "30px 10px";
+      document.getElementsByClassName('brand').style.fontSize = "25px";
+    } else {
+      document.getElementsByClassName('navbar').style.padding = "90px 20px";
+      document.getElementsByClassName('brand').style.fontSize = "35px";
+    }
   }
 }
