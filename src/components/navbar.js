@@ -3,7 +3,7 @@ import { css, html, LitElement } from 'lit-element';
 export class Navbar extends LitElement {
 
   static get styles() {
-    return css`
+    return [css`
       .navbar {
         overflow: hidden;
         background-color: #f1f1f1;
@@ -12,7 +12,7 @@ export class Navbar extends LitElement {
         align-items: center;
         padding: 90px 20px;
         transition: .4s;
-        position: fixed;
+        position: relative;
         width: 100vw;
         top: 0;
         left: 0;
@@ -39,7 +39,7 @@ export class Navbar extends LitElement {
       .links a:last-child {
         margin-right: 3em;
       }
-    `;
+    `];
   }
 
   render() {
