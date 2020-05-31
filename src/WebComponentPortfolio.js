@@ -13,6 +13,7 @@ export class WebComponentPortfolio extends LitElement {
   static get styles() {
     return css`
       :host {
+        overflow-x: hidden;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -26,6 +27,9 @@ export class WebComponentPortfolio extends LitElement {
         background-position: center;
       }
       .container {
+        position: relative;
+        top: 50px;
+        flex-grow: 1;
         background-color: #FFFFFF;
         opacity: .8;
         max-width: 960px;
@@ -37,11 +41,13 @@ export class WebComponentPortfolio extends LitElement {
 
   render() {
     return html`
+    <!-- <div class="main"> -->
     <portfolio-navbar></portfolio-navbar>
       <div class="container">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam maxime, sequi quibusdam officiis soluta corrupti maiores deleniti magnam fugit ipsum itaque obcaecati iure architecto est! Repellat assumenda delectus tempora?
       </div>
       <portfolio-footer></portfolio-footer>
+      <!-- </div> -->
     `;
   }
 
