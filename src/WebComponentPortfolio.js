@@ -36,6 +36,9 @@ export class WebComponentPortfolio extends LitElement {
         padding: 1em;
         margin: 2em auto;
       }
+      portfolio-footer {
+        width: 100%;
+      }
     `;
   }
 
@@ -49,15 +52,5 @@ export class WebComponentPortfolio extends LitElement {
       <portfolio-footer></portfolio-footer>
       <!-- </div> -->
     `;
-  }
-
-  scrollCheck() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementsByClassName('navbar').style.padding = "30px 10px";
-      document.getElementsByClassName('brand').style.fontSize = "25px";
-    } else {
-      document.getElementsByClassName('navbar').style.padding = "90px 20px";
-      document.getElementsByClassName('brand').style.fontSize = "35px";
-    }
   }
 }
