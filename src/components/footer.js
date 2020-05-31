@@ -4,14 +4,18 @@ export class Footer extends LitElement {
   static get styles() {
     return [
       css`
-
+        .footer {
+          background-color: orange;
+        }
       `
     ]
   }
 
   render() {
     return html`
-      <p>Footer works</p>
+      <div class="footer">
+        <p>Footer works</p>
+      </div>
     `
   }
 }
