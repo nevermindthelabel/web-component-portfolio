@@ -5,6 +5,8 @@ export class Footer extends LitElement {
     return [
       css`
         .footer {
+          display: flex;
+          width: 100%;
           background-color: orange;
         }
       `
