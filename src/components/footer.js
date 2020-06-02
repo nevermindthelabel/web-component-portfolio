@@ -8,6 +8,7 @@ export class Footer extends LitElement {
           display: flex;
           width: 100%;
           background-color: orange;
+          justify-content: center;
         }
       `
     ]
