@@ -11,6 +11,13 @@ export class Cards extends LitElement {
     ]
   }
 
+  render() {
+    return html`
+      <div class="card">
+      </div>
+    `
+  }
+
 }
 
 customElements.define('portfolio-cards', Cards);
