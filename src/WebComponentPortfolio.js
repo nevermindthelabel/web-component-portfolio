@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
 import './components/navbar.js';
 import './components/footer.js';
+import './components/cards.js';
 
 export class WebComponentPortfolio extends LitElement {
   static get properties() {
@@ -49,6 +50,7 @@ export class WebComponentPortfolio extends LitElement {
       <div class="container">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quisquam maxime, sequi quibusdam officiis soluta corrupti maiores deleniti magnam fugit ipsum itaque obcaecati iure architecto est! Repellat assumenda delectus tempora?
       </div>
+      <portfolio-cards></portfolio-cards>
       <portfolio-footer></portfolio-footer>
       <!-- </div> -->
     `;
