@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-router.route('/api', async (req, res) => {
+router.get('/api', async (req, res) => {
   res.send('api route')
 });
 
