@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/test', async (req, res) => {
-  res.send('testing route works');
+  await res.send('testing route works');
 });
 
 app.use(routes);
