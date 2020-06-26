@@ -4,8 +4,8 @@ const routes = require('./routes');
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('express works');
+app.get('/', async (req, res) => {
+  await res.send('express works');
 });
 
 app.get('/test', async (req, res) => {
