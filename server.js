@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
   res.send('express works');
 });
 
+app.get('/test', async (req, res) => {
+  res.send('testing route works');
+});
+
 app.use(routes);
 
 app.listen(PORT, () => console.log(`App 👂 at http://localhost:${PORT}`));
