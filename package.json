@@ -8,7 +8,7 @@
     "format": "npm run format:eslint && npm run format:prettier",
     "build": "rimraf dist && rollup -c rollup.config.js",
     "start:build": "npm run build && es-dev-server --root-dir dist --app-index index.html --open --compatibility none",
-    "start": "es-dev-server --open --watch"
+    "start": "es-dev-server --open --watch && nodemon server.js"
   },
   "devDependencies": {
     "@open-wc/building-rollup": "^1.0.0",
