@@ -1,4 +1,4 @@
-const proxy = require('koa-proxies');
+const proxy = require('koa-proxy');
 
 module.exports = {
   port: 3000,
