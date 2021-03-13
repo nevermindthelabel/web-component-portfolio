@@ -23,6 +23,7 @@ export class Cards extends LitElement {
     return html`
       <div class="card">
         <div class="container">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio ducimus voluptatibus, similique cupiditate quos, est corporis voluptatum soluta, eius vero? Officiis sit provident commodi eveniet temporibus aliquam eius tempora!
         </div>
       </div>
     `

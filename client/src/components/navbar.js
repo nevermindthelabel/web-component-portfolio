@@ -10,7 +10,7 @@ export class Navbar extends LitElement {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 90px 20px;
+        /* padding: 90px 20px; */
         transition: .4s;
         top: 0;
         left: 0;

@@ -19,7 +19,17 @@ export class WebComponentPortfolio extends LitElement {
         height: 100vh;
       }
       main {
+        color: #f1f1f1;
         background: url('../assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg') no-repeat center center;
+      }
+      main::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.25);
       }
     `;
   }
