@@ -1,14 +1,15 @@
-const proxy = require('koa-proxy');
+const proxy = require('koa-proxies');
 
 module.exports = {
   port: 3000,
   watch: true,
   nodeResolve: true,
+  open: true,
   appIndex: 'index.html',
-  customMiddlewares: [
+  middlewares: [
     proxy('/api', {
-      target: 'http://localhost:3001'
-    })
+      target: 'http://localhost:3001',
+    }),
   ],
-  moduleDirs: ['node_modules'],
+  moduleDirs: ['node_modules']
 };
