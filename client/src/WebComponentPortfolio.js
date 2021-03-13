@@ -18,6 +18,9 @@ export class WebComponentPortfolio extends LitElement {
         grid-template-rows: auto 1fr auto;
         height: 100vh;
       }
+      main {
+        background: url('../assets/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg') no-repeat center center;
+      }
     `;
   }
 
