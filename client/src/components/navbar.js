@@ -12,8 +12,6 @@ export class Navbar extends LitElement {
         align-items: center;
         padding: 90px 20px;
         transition: .4s;
-        position: relative;
-        width: 100vw;
         top: 0;
         left: 0;
       }
