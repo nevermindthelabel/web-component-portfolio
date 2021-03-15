@@ -1,6 +1,36 @@
 import { css, html, LitElement } from 'lit-element';
+import { data } from '../fakeData.js';
 
-export class Cards extends LitElement {
+export class PortfolioCards extends LitElement {
+  static get properties() {
+  return {
+    project: { type: Object }
+  }
+}
+
+constructor() {
+  super();
+  this.project = data;
+}
+
+firstUpdated() {
+
+}
+
+updated() {
+  console.log(this.project);
+}
+
+  render() {
+    return html`
+      <div class="card">
+        <div class="container">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio ducimus voluptatibus, similique cupiditate quos, est corporis voluptatum soluta, eius vero? Officiis sit provident commodi eveniet temporibus aliquam eius tempora!
+        </div>
+      </div>
+    `
+  }
+
   static get styles() {
     return [
       css `
@@ -19,16 +49,6 @@ export class Cards extends LitElement {
     ]
   }
 
-  render() {
-    return html`
-      <div class="card">
-        <div class="container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio ducimus voluptatibus, similique cupiditate quos, est corporis voluptatum soluta, eius vero? Officiis sit provident commodi eveniet temporibus aliquam eius tempora!
-        </div>
-      </div>
-    `
-  }
-
 }
 
-customElements.define('portfolio-cards', Cards);
+customElements.define('portfolio-cards', PortfolioCards);
